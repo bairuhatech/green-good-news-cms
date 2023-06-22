@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exclusives",
+  "info": {
+    "singularName": "exclusive",
+    "pluralName": "exclusives",
+    "displayName": "Exclusive-News",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tittle": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Head": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "string"
+    }
+  }
+}
