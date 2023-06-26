@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entertainments",
+  "info": {
+    "singularName": "entertainment",
+    "pluralName": "entertainments",
+    "displayName": "Entertainment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Head": {
+      "type": "text"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "text"
+    },
+    "Image": {
+      "type": "text"
+    }
+  }
+}

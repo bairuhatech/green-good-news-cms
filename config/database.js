@@ -4,16 +4,16 @@ module.exports = ({ env }) => ({
     connection: {
       host: env(
         "DATABASE_HOST",
-        "51.159.104.4"
+        process.env.DATABASE_HOST
       ),
-      port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "green-good-news-db"),
-      user: env("DATABASE_USERNAME", "scalewayuser"),
+      port: env.int("DATABASE_PORT", process.env.DATABASE_PORT),
+      database: env("DATABASE_NAME", process.env.DATABASE_NAME),
+      user: env("DATABASE_USERNAME", process.env.DATABASE_USERNAME),
       password: env(
         "DATABASE_PASSWORD",
-        "scalewayuser@123!"
+        process.env.DATABASE_PASSWORD
       ),
-      schema: env("DATABASE_SCHEMA", "public"), 
+      schema: env("DATABASE_SCHEMA", process.env.DATABASE_SCHEMA), 
       ssl: {
         rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false),
       },
