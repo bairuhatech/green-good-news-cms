@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "webstories",
+  "info": {
+    "singularName": "web-stories",
+    "pluralName": "webstories",
+    "displayName": "webStories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    },
+    "imageList": {
+      "type": "json"
+    }
+  }
+}

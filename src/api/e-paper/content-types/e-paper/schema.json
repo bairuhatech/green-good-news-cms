@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "e_papers",
+  "info": {
+    "singularName": "e-paper",
+    "pluralName": "e-papers",
+    "displayName": "EPaper",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "edition": {
+      "type": "string"
+    },
+    "epapercollections": {
+      "type": "json"
+    },
+    "image": {
+      "type": "string"
+    }
+  }
+}

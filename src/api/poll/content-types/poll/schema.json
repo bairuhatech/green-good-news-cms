@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "polls",
+  "info": {
+    "singularName": "poll",
+    "pluralName": "polls",
+    "displayName": "Poll"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questions": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "poll_options": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::poll-option.poll-option",
+      "mappedBy": "poll_id"
+    }
+  }
+}

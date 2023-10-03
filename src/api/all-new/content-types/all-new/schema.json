@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_news",
+  "info": {
+    "singularName": "all-new",
+    "pluralName": "all-news",
+    "displayName": "All-News",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "head": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "string"
+    },
+    "image2": {
+      "type": "string"
+    },
+    "social_image": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "all_news"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "news_id"
+    },
+    "likes": {
+      "type": "biginteger"
+    },
+    "saved": {
+      "type": "biginteger"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "all_new"
+    },
+    "user_id": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user"
+    },
+    "audio": {
+      "type": "string"
+    },
+    "isHighPriority": {
+      "type": "boolean",
+      "default": false
+    },
+    "permalink": {
+      "type": "string"
+    },
+    "image1_description": {
+      "type": "string"
+    },
+    "image2_description": {
+      "type": "string"
+    },
+    "author_name": {
+      "type": "string"
+    },
+    "author_image": {
+      "type": "text"
+    },
+    "is_deleted": {
+      "type": "boolean"
+    },
+    "publish_at": {
+      "type": "datetime"
+    },
+    "isSecondLeads": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "all_news"
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subcategory.subcategory",
+      "mappedBy": "all_new"
+    }
+  }
+}

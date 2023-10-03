@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vidyaprabhaadhams",
+  "info": {
+    "singularName": "vidyaprabhaadham",
+    "pluralName": "vidyaprabhaadhams",
+    "displayName": "vidyaprabhaadham"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Author": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "image1": {
+      "type": "string"
+    },
+    "image2": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "image1_description": {
+      "type": "string"
+    },
+    "image2_description": {
+      "type": "string"
+    },
+    "image3_description": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editorials",
+  "info": {
+    "singularName": "editorial",
+    "pluralName": "editorials",
+    "displayName": "Editorial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "head": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "seriesName": {
+      "type": "string"
+    },
+    "image1": {
+      "type": "string"
+    },
+    "image2": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "image1_description": {
+      "type": "text"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "audio": {
+      "type": "string"
+    },
+    "image2_description": {
+      "type": "text"
+    }
+  }
+}

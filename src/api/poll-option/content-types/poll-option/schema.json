@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "poll_options",
+  "info": {
+    "singularName": "poll-option",
+    "pluralName": "poll-options",
+    "displayName": "pollOption"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "options": {
+      "type": "string"
+    },
+    "vote": {
+      "type": "integer"
+    },
+    "poll_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::poll.poll",
+      "inversedBy": "poll_options"
+    }
+  }
+}

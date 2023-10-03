@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "comments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "richtext"
+    },
+    "news_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::all-new.all-new",
+      "inversedBy": "comments"
+    },
+    "user": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

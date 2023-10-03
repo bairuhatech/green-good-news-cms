@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "in_snaps",
+  "info": {
+    "singularName": "insnaps",
+    "pluralName": "in-snaps",
+    "displayName": "inSnaps",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "imageList": {
+      "type": "json"
+    },
+    "head": {
+      "type": "string"
+    }
+  }
+}

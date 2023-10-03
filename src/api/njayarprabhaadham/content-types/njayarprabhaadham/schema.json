@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "njayarprabhaadhams",
+  "info": {
+    "singularName": "njayarprabhaadham",
+    "pluralName": "njayarprabhaadhams",
+    "displayName": "njayarprabhaadham",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Author": {
+      "type": "string"
+    },
+    "image1": {
+      "type": "string"
+    },
+    "Body": {
+      "type": "richtext"
+    },
+    "image2": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string"
+    },
+    "image1_description": {
+      "type": "string"
+    },
+    "image2_description": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
